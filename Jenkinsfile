@@ -81,7 +81,7 @@ pipeline {
               nexusUrl: '54.213.194.126:8081',
               groupId: 'webapp',
               version: "${env.BUILD_ID}-${env.BUILD_TIMESTAMP}",
-              repository: 'Maven-Project-Snapshot',  //"${NEXUS_REPOSITORY}",
+              repository: 'Maven-Project-Release',  //"${NEXUS_REPOSITORY}",
               credentialsId: "${NEXUS_CREDENTIAL_ID}",
               artifacts: [
                   [artifactId: 'webapp',
